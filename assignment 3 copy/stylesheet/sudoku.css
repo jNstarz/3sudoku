@@ -4,7 +4,7 @@ body {
 
 }
 
-hr { 
+hr {
     width: 500px;
 }
 
@@ -12,13 +12,14 @@ hr {
     color: blueviolet;
 }
 
-#board {
+#sudoku-container {
     width: 288px;
     height: 288px;
     background-color: bisque;
     margin: 0 auto;
     display: grid;
-    border: 3px solid black; /* this will set the 6 by 6 boxes apart */
+    border: 3px solid black;
+    /* this will set the 6 by 6 boxes apart */
     box-sizing: border-box;
 
     grid-template-columns: repeat(6, 1fr);
