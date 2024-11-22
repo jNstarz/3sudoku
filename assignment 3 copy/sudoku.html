@@ -9,13 +9,20 @@
     </head>
 
     <body>
+        <header>
+            <div class="header-wrapper">
+                <div class="sudokat">Sudokat</div>
+                <nav>
+                    <div>Kat Tournament</div>
+                    <div>Daily Challenge</div>
+                    <div>Rules</div>
+                    <div>About</div>
+                    <div>Sign Up</div>
+                </nav>
+                
+            </div>
+        </header>
         <div class="main-container">
-
-            <h1>Sudoku</h1>
-            <hr>
-            <h2 id="errors">Errors: 0</h2>
-    
-           <!-- Sudoku board -->
             <div id="sudoku-container">
                 <div class="sudoku-box">
                     <div></div>
@@ -45,22 +52,30 @@
 
             <!-- Side bar containing number pad and controls -->
             <div class="side-bar">
-                <div class="new-game">
-                    <button class="new-game">New Game</button>
-                </div>
                 <div class="game-controls">
-                    <button class="control-button" id="undo">Undo</button>
-                    <button class="control-button" id="redo">Redo</button>
-                    <button class="control-button" id="delete">Delete</button>
-                    <button class="control-button" id="notes">Notes</button>
-                    <button class="control-button" id="hints">Hints</button>
+                    <div class="new-game">
+                        <button class="new-game-button">New Game</button>
+                    </div>
+
+                    <div class="controls">
+                        <button class="control-button" id="undo">Undo</button>
+                        <button class="control-button" id="redo">Redo</button>
+                        <button class="control-button" id="delete">Delete</button>
+                        <button class="control-button" id="notes">Notes</button>
+                        <button class="control-button" id="hints">Hints</button>
+                    </div>
                 </div>
 
                 <div class="number-pad">
-                    <button class="pad-button" id="number-1">1</button>
-                    <button class="pad-button" id="number-2">2</button>
-                    <button class="pad-button" id="number-3">3</button>
-                    <button class="pad-button" id="number-4">4</button>
+                    <div class="pad-row">
+                        <button class="pad-button" id="number-1">1</button>
+                        <button class="pad-button" id="number-2">2</button>
+                    </div>
+                    <div class="pad-row">
+                        <button class="pad-button" id="number-3">3</button>
+                        <button class="pad-button" id="number-4">4</button>
+                    </div>
+                   
                 </div>
 
             </div>
